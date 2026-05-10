@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Marianna 18 - Casino Night</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Audio -->
+    <audio id="music" src="justdance.mp3" preload="auto" loop></audio>
+
+    <!-- ====== TAP TO START (required for mobile audio) ====== -->
+    <div id="tap-start" class="tap-start">
+        <div class="tap-content">
+            <div class="tap-suit">♠</div>
+            <p class="tap-text">Toca para comenzar</p>
+        </div>
+    </div>
+
+    <!-- ====== LOADING SCREEN ====== -->
+    <div id="loader" class="loader" style="display:none;">
+        <div class="loader-flash"></div>
+        <div class="loader-text-wrap">
+            <div class="loader-line l1">ESTO NO ES</div>
+            <div class="loader-line l2">UNA FIESTA</div>
+            <div class="loader-line l3">NORMAL</div>
+            <div class="loader-dot">.</div>
+            <div class="loader-dot d2">.</div>
+            <div class="loader-dot d3">.</div>
+            <div class="loader-final">
+                <span class="loader-suit">♠</span>
+                <span class="loader-word">CASINO NIGHT</span>
+                <span class="loader-suit">♠</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <div class="app" id="app">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-bg">
+                <video class="hero-bg-video" autoplay muted loop playsinline>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+
+            <!-- Decorative gold corner frames -->
+            <div class="corner-frame top-left"></div>
+            <div class="corner-frame top-right"></div>
+            <div class="corner-frame bottom-left"></div>
+            <div class="corner-frame bottom-right"></div>
+
+            <!-- Floating card suits decoration -->
+            <div class="deco-suits">
+                <span class="deco-suit ds1">♠</span>
+                <span class="deco-suit ds2">♦</span>
+                <span class="deco-suit ds3">♣</span>
+                <span class="deco-suit ds4">♥</span>
+                <span class="deco-suit ds5">♠</span>
+                <span class="deco-suit ds6">♦</span>
+            </div>
+
+            <!-- Top badge -->
+            <div class="top-badge">INVITACIÓN EXCLUSIVA</div>
+
+            <div class="hero-content">
+                <div class="number-18">18</div>
+                <h1 class="hero-name">Marianna</h1>
+                <div class="hero-divider"></div>
+                <p class="hero-tagline">
+                    <span>♠</span> Casino Night <span>♠</span>
+                </p>
+                <!-- Valid ticket -->
+                <div class="valid-ticket">
+                    <span class="ticket-line"></span>
+                    <span class="ticket-text">Válido para una sola persona</span>
+                    <span class="ticket-line"></span>
+                </div>
+            </div>
+
+            <div class="scroll-cue">
+                <span>Desliza</span>
+                <div class="arrow-down"></div>
+            </div>
+        </section>
+
+        <!-- BODY CONTENT (compact, no snap) -->
+        <div class="body-content">
+
+            <!-- HYPE -->
+            <div class="block hype reveal">
+                <p class="hype-small">Estás invitado a la fiesta del año</p>
+                <h2 class="hype-title">NO TE LO<br>PUEDES PERDER</h2>
+                <p class="hype-desc">Una noche que nadie va a olvidar.<br>Casino, música, y la mejor fiesta de tu vida.</p>
+            </div>
+
+            <!-- Decorative Divider -->
+            <div class="block suits-divider reveal">
+                <span>♠</span><span>♥</span><span>♦</span><span>♣</span>
+            </div>
+
+            <!-- INFO CARDS -->
+            <div class="block info-cards">
+                <div class="info-card reveal">
+                    <div class="info-label">CUÁNDO</div>
+                    <div class="info-value">22 de Mayo, 2026</div>
+                    <div class="info-sub">6:00 PM</div>
+                </div>
+                <div class="info-card reveal">
+                    <div class="info-label">DÓNDE</div>
+                    <a href="https://maps.google.com/?q=10.073340,-69.278389" target="_blank" class="info-link">📍 Ver Ubicación</a>
+                </div>
+                <div class="info-card reveal">
+                    <div class="info-label">DRESS CODE</div>
+                    <div class="info-value">Casino</div>
+                    <div class="info-warning">⛔ No Rojo</div>
+                </div>
+            </div>
+
+            <!-- CONFIRM -->
+            <div class="block confirm reveal">
+                <h2 class="confirm-title">¿Vienes o no?</h2>
+                <p class="confirm-desc">Confirma antes de que se llene la lista.</p>
+                <a href="https://wa.me/584145541300?text=%C2%A1Hola!%20Confirmo%20mi%20asistencia%20al%20cumplea%C3%B1os%20de%20Marianna%20%F0%9F%8E%B0%F0%9F%8E%82" target="_blank" class="btn-confirm">
+                    Confirmar por WhatsApp
+                </a>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <p class="valid-text">Válido para una persona</p>
+                <p>Marianna's 18 · Casino Night</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
